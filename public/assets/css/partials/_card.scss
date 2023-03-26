@@ -1,0 +1,17 @@
+.card {
+    border: solid 1px $bgLightGreen;
+    margin: 2rem 4rem;
+    text-align: center;
+
+    img {
+        width: 30rem;
+    }
+
+    p:last-child {
+        color: $textRed;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

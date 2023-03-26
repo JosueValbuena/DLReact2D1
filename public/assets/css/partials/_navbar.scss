@@ -1,0 +1,18 @@
+.nav {
+    background-color: $bgDarkGreen;
+    color: $textLight;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+
+    div * {
+        text-decoration: none;
+        color: $textLight;
+        padding: 0 1rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

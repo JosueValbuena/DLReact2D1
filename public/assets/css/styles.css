@@ -1,0 +1,87 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.nav {
+  background-color: #748e54;
+  color: #fffbfc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+.nav div * {
+  text-decoration: none;
+  color: #fffbfc;
+  padding: 0 1rem;
+}
+.nav div *:hover {
+  text-decoration: underline;
+}
+
+.containerHome {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containerLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 0;
+}
+.containerLogin * {
+  display: flex;
+  flex-direction: column;
+  margin: 0.25rem 0;
+}
+
+.containerContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+.containerContacto * {
+  display: flex;
+  flex-direction: column;
+  margin: 0.25rem 0;
+}
+.containerContacto .mensajeEnviado {
+  background-color: #748e54;
+  padding: 1rem 2rem;
+}
+
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #955e42;
+  font-weight: bold;
+  font-size: 5rem;
+  height: 80vh;
+}
+
+.card {
+  border: solid 1px #9c914f;
+  margin: 2rem 4rem;
+  text-align: center;
+}
+.card img {
+  width: 30rem;
+}
+.card p:last-child {
+  color: #955e42;
+}
+.card:hover {
+  transform: scale(1.05);
+}/*# sourceMappingURL=styles.css.map */

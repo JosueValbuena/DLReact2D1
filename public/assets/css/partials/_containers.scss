@@ -1,0 +1,45 @@
+.containerHome {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+
+    * {
+        display: flex;
+        flex-direction: column;
+        margin: 0.25rem 0;
+    }
+}
+
+.containerContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+
+    * {
+        display: flex;
+        flex-direction: column;
+        margin: 0.25rem 0;
+    }
+
+    .mensajeEnviado {
+        background-color: $bgDarkGreen;
+        padding: 1rem 2rem;
+    }
+}
+
+.notFound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $textRed;
+    font-weight: bold;
+    font-size: 5rem;
+    height: 80vh;
+}
